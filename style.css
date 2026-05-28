@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.barraLateral {
+    width: 95px;
+    height: 100vh;
+    color: aliceblue;
+    padding: 20px;
+    position: fixed;
+    margin-top: 70px;
+    z-index: 1000;
+    
+}
+
+.barraLateral ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barraLateral figure {
+    display: flex;
+     
+	flex-direction: column;
+    margin-top: 30px;
+}
+
+.barraLateral figcaption {
+    font-size: 8px;
+    margin-top: 8px;
+}
+
+#titulo_principal{
+                background-color: #161c22;
+                color: white;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 2px;
+                font-size: 30px;
+            }
+
+#logo{
+    display: flex;
+    align-items:center;
+    gap:10px;
+}
+
+.header{
+    display:flex;
+    padding:25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(26, 34, 41, 0.8);
+    backdrop-filter: blur(50px);
+    
+}
+
+.botao{
+    backdrop-filter: blur(50px);
+    background-color: #161c22;
+    border-radius: 15px;
+
+}
+
+.pesquisa{
+    display:flex;
+    
+}
+.pesquisa input{
+     border-radius: 20px;
+    display: block;
+    margin-left: 200px;
+
+    width:540px;
+    padding:12px;
+    background-color: #4b5661;
+
+    border:none;
+}
+
+body{
+    background-color: #1a2229;
+    color: whitesmoke;
+    font-family: 'Roboto Mono';
+}
+
+#grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns:repeat( 3, minmax(350px,1fr));
+    row-gap: 90px;
+    margin-left: 95px;
+    margin-top: 135px;
+}
+
+
+#img{
+    align-items: center;
+    width: 125%;
+    background-color:aqua;
+
+}
+
+#img1{
+	display:flex;
+}
+#article{
+    font-size: 14px;
+}
+
+.imagemRedonda{
+    border-radius: 15px;
+}
+
+.video{
+	display:flex;
+	margin-left: 60px;
+	border-radius: 10px;
+	
+}
+
+#linhaVideos {
+	position: absolute;
+    display: grid;
+    grid-template-columns:repeat( 1, minmax(350px,1fr));
+    row-gap: 10px;
+    left: 1260px;
+	top:60px;
+}
+
+/* PARTE DO SHORTS */
+
+.divshorts {
+    height:100vh;
+}
+
+.shorts {
+    height:100vh; 
+    width:100%; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+}
