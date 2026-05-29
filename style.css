@@ -63,6 +63,16 @@
     
 }
 
+.headershorts{
+    display:flex;
+    padding:25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .botao{
     backdrop-filter: blur(50px);
     background-color: #161c22;
@@ -140,6 +150,10 @@ body{
 
 .divshorts {
     height:100vh;
+    overflow-y:scroll; 
+    scroll-snap-type:y mandatory; 
+    scrollbar-width:5px;
+    text-shadow: 0 0 3px #ffffff;
 }
 
 .shorts {
@@ -148,4 +162,59 @@ body{
     display:flex; 
     justify-content:center; 
     align-items:center;
+    position:relative; 
+    scroll-snap-align:start;
+}
+
+.videosh {
+    height:90%; 
+    width:auto; 
+    max-width:100%; 
+    object-fit:cover;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.coisas{ 
+    position:absolute; 
+    top: 50vh; 
+    left:50px; 
+    color:white; 
+    z-index:30; 
+} 
+
+.coisas h2{ 
+    font-size:40px; 
+    margin-bottom:10px; 
+} 
+
+.coisas p{ 
+    font-size:15px; 
+    opacity:0.8; }
+
+.likeshort{ 
+    position:absolute; 
+    top: 46vh; 
+    right:65vh; 
+    color:white; 
+    z-index:30;
+}
+
+.likeshort img{ 
+    height: 80px;
+    width: 80px;
+}
+
+.dislikeshort{ 
+    position:absolute; 
+    top: 54vh; 
+    right:65vh; 
+    color:white; 
+    z-index:30;
+}
+
+.dislikeshort img{ 
+    height: 80px;
+    width: 80px;
 }
